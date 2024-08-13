@@ -6,7 +6,7 @@
 /*   By: shashemi <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/13 12:17:19 by shashemi          #+#    #+#             */
-/*   Updated: 2024/08/13 12:17:22 by shashemi         ###   ########.fr       */
+/*   Updated: 2024/08/13 12:56:54 by shashemi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 int	ft_str_is_uppercase(char *str)
@@ -16,10 +16,8 @@ int	ft_str_is_uppercase(char *str)
 	i = 0;
 	while (str[i] != 0)
 	{
-		if (str[i] > 64 && str[i] < 91)
-			return (1);
-		else
+		if (!(str[i] >= 'A' && str[i] <= 'Z'))
 			return (0);
 	}
-	return (0);
+	return (1);
 }

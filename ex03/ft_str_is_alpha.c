@@ -6,7 +6,7 @@
 /*   By: shashemi <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/13 11:44:18 by shashemi          #+#    #+#             */
-/*   Updated: 2024/08/13 12:38:58 by shashemi         ###   ########.fr       */
+/*   Updated: 2024/08/13 12:54:28 by shashemi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 int	ft_str_is_numeric(char *str)
@@ -16,10 +16,8 @@ int	ft_str_is_numeric(char *str)
 	i = 0;
 	while (str[i] != 0)
 	{
-		if (str[i] > 47 && str[i] < 58)
-			return (1);
-		else
+		if (str[i] < '0' || str[i] > '9')
 			return (0);
 	}
-	return (0);
+	return (1);
 }

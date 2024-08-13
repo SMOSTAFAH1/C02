@@ -6,7 +6,7 @@
 /*   By: shashemi <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/13 11:58:59 by shashemi          #+#    #+#             */
-/*   Updated: 2024/08/13 11:59:01 by shashemi         ###   ########.fr       */
+/*   Updated: 2024/08/13 12:55:38 by shashemi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 int	ft_str_is_lowercase(char *str)
@@ -16,10 +16,8 @@ int	ft_str_is_lowercase(char *str)
 	i = 0;
 	while (str[i] != 0)
 	{
-		if (str[i] > 96 && str[i] < 123)
-			return (1);
-		else
+		if (!(str[i] >= 'a' && str[i] <= 'z'))
 			return (0);
 	}
-	return (0);
+	return (1);
 }

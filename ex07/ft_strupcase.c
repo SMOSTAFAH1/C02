@@ -16,14 +16,10 @@ int	ft_strupcase(char *str)
 	i = 0;
 	while (str[i] != 0)
 	{
-		if (str[i] > 64 && str[i] < 91)
-			return (1);
-		else if (str[i] > 96 && str[i] < 123)
-		{
-			return (str[i] + 32);
-		}
+		if (str[i] >= 'A' && str[i] <= 'Z')
+			str[i] += 32;
 		else
 			return (0);
 	}
-	return (0);
+	return (str);
 }

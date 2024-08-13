@@ -6,7 +6,7 @@
 /*   By: shashemi <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/13 11:12:55 by shashemi          #+#    #+#             */
-/*   Updated: 2024/08/13 11:12:57 by shashemi         ###   ########.fr       */
+/*   Updated: 2024/08/13 13:23:14 by shashemi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 int	ft_str_is_alpha(char *str)
@@ -16,10 +16,9 @@ int	ft_str_is_alpha(char *str)
 	i = 0;
 	while (str[i] != 0)
 	{
-		if ((str[i] > 64 && str[i] < 91) || (str[i] > 96 && str[i] < 123))
-			return (1);
-		else
+		if (!((str[i] >= 'a' && str[i] <= 'z')
+				|| (str[i] >= 'A' && str[i] <= 'Z')))
 			return (0);
 	}
-	return (0);
+	return (1);
 }
