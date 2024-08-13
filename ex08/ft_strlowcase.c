@@ -20,6 +20,7 @@ int	ft_strlowcase(char *str)
 			str[i] -= 32;
 		else
 			return (0);
+		i++;
 	}
 	return (*str);
 }

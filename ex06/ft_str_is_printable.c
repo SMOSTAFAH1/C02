@@ -18,6 +18,7 @@ int	ft_str_is_printable(char *str)
 	{
 		if (!(str[i] <= 127))
 			return (0);
+		i++;
 	}
 	return (1);
 }
