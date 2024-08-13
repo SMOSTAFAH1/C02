@@ -9,18 +9,16 @@
 /*   Updated: 2024/08/13 13:45:49 by shashemi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-int	ft_strupcase(char *str)
+char	*ft_strupcase(char *str)
 {
 	int	i;
 
 	i = 0;
 	while (str[i] != 0)
 	{
-		if (str[i] >= 'A' && str[i] <= 'Z')
-			str[i] += 32;
-		else
-			return (0);
+		if (str[i] >= 'a' && str[i] <= 'z')
+			str[i] -= 32;
 		i++;
 	}
-	return (*str);
+	return (&(*str));
 }
