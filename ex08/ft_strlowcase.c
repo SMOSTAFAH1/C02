@@ -6,10 +6,10 @@
 /*   By: shashemi <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/13 12:32:34 by shashemi          #+#    #+#             */
-/*   Updated: 2024/08/13 12:32:37 by shashemi         ###   ########.fr       */
+/*   Updated: 2024/08/13 13:46:13 by shashemi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-int	ft_strupcase(char *str)
+int	ft_strlowcase(char *str)
 {
 	int	i;
 
@@ -21,5 +21,5 @@ int	ft_strupcase(char *str)
 		else
 			return (0);
 	}
-	return (str);
+	return (*str);
 }

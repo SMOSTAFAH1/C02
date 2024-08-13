@@ -6,7 +6,7 @@
 /*   By: shashemi <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/13 12:27:30 by shashemi          #+#    #+#             */
-/*   Updated: 2024/08/13 12:27:36 by shashemi         ###   ########.fr       */
+/*   Updated: 2024/08/13 13:45:49 by shashemi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 int	ft_strupcase(char *str)
@@ -21,5 +21,5 @@ int	ft_strupcase(char *str)
 		else
 			return (0);
 	}
-	return (str);
+	return (*str);
 }
